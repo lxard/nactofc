@@ -1,0 +1,120 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://files.catbox.moe/myrot3.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffe1;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0066;
+}
+
+/* Partner Grid */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Partner Card */
+.partner-card {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5); /* lebih gelap agar kontras */
+  border: 1px solid rgba(255, 0, 80, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 0, 100, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 0, 120, 0.6);
+}
+
+/* Logo Partner */
+.partner-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 100, 0.4);
+}
+
+/* Nama Partner */
+.partner-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff80c0;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px #ff4080;
+}
+
+/* Deskripsi Partner */
+.partner-desc {
+  font-size: 0.95rem;
+  color: #f0d0e0;
+  line-height: 1.5;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(45deg, #ff80c0, #ff4080);
+  color: #000;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff80c0aa;
+  z-index: 10;
+}
+
+/* Tombol Kembali */
+.back-button-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.back-button {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff4080;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px #ff80c0aa;
+}
+
+.back-button:hover {
+  background: #ff66a0;
+  transform: scale(1.05);
+}
